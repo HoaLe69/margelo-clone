@@ -1,14 +1,30 @@
 'use client'
-import { useState } from 'react'
+import { useContext, useState, useEffect, useRef } from 'react'
+import { ScrollContext } from './scroll-observer'
 import Image from 'next/image'
 
 const Masthead = () => {
+  const { scrollY } = useContext(ScrollContext)
   const [imageLoaded, setImageLoaded] = useState<boolean>(false)
+  const [progress, setProgress] = useState<number>(0)
+  const refContainer = useRef<HTMLDivElement>(null)
+  const { current: elContainer } = refContainer
   const handleOnLoaded = () => {
     setImageLoaded(true)
   }
+
+  useEffect(() => {
+    if (elContainer) {
+      setProgress(Math.min(1, scrollY / elContainer?.clientHeight))
+    }
+  }, [scrollY, elContainer])
+  console.log(scrollY)
   return (
-    <div className="min-h-screen top-0  flex flex-col items-center justify-center">
+    <div
+      style={{ transform: `translateY(-${progress * 20}vh)` }}
+      ref={refContainer}
+      className="min-h-screen top-0 sticky flex flex-col items-center -z-10 justify-center"
+    >
       <video
         loop
         autoPlay

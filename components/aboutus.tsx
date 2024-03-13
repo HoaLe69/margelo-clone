@@ -1,5 +1,5 @@
 import Member from './member'
-const Aboutus = async () => {
+const Aboutus = () => {
   // using process.cwd() to get current path
   // fs.readdir to get all file in directory
   // const imageDir = path.join(process.cwd(), 'public/assets/team')
