@@ -1,13 +1,14 @@
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
+
 const Masthead = () => {
   const [imageLoaded, setImageLoaded] = useState<boolean>(false)
   const handleOnLoaded = () => {
     setImageLoaded(true)
   }
   return (
-    <div className="min-h-screen  sticky top-0  flex flex-col items-center justify-center">
+    <div className="min-h-screen top-0  flex flex-col items-center justify-center">
       <video
         loop
         autoPlay
