@@ -37,7 +37,7 @@ const Aboutus = () => {
       <div className="container mx-auto px-11 mt-28 text-center">
         <h2 className="font-bold">Our Team</h2>
         <span className="mt-2 inline-block">the &ldquo;Spec-ops&rdquo;</span>
-        <div className="mt-10 grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-20">
+        <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-20">
           <Member id="marc" socialId="@mrousavy" name="Marc" />
           <Member id="christian" socialId="@chrfalch" name="Christian" />
           <Member id="christoph" socialId="@chrispader" name="Christoph" />

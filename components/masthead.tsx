@@ -9,6 +9,7 @@ const Masthead = () => {
   const [progress, setProgress] = useState<number>(0)
   const refContainer = useRef<HTMLDivElement>(null)
   const { current: elContainer } = refContainer
+
   const handleOnLoaded = () => {
     setImageLoaded(true)
   }
@@ -18,7 +19,6 @@ const Masthead = () => {
       setProgress(Math.min(1, scrollY / elContainer?.clientHeight))
     }
   }, [scrollY, elContainer])
-  console.log(scrollY)
   return (
     <div
       style={{ transform: `translateY(-${progress * 20}vh)` }}

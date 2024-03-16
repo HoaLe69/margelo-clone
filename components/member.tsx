@@ -5,6 +5,7 @@ type Props = {
   name: string
   socialId: string
 }
+
 const Member = ({ id, name, socialId }: Props) => {
   return (
     <div>
