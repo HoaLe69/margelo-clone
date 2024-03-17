@@ -26,7 +26,7 @@ const Achievements = () => {
 
   return (
     <div ref={refContainer} className="bg-black text-white">
-      <div className="min-h-screen max-w-5xl mx-auto px-10 lg:px-20 py-24 md:py-28 text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tight flex items-center justify-center">
+      <div className="min-h-screen max-w-5xl mx-auto px-10 lg:px-20 py-24  md:py-28 lg:py-36 text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tight flex items-center justify-center">
         <div style={{ lineHeight: '1.15' }}>
           <span
             style={{ opacity: opacityOfBlock(progress, 0) }}
