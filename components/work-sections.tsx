@@ -116,7 +116,6 @@ export const WorkRight: React.FC<Props> = props => {
                   alt="iphone case"
                   width={840}
                   height={1620}
-                  layout="reponsive"
                   className={'absolute top-0'}
                 />
               </div>
@@ -130,7 +129,6 @@ export const WorkRight: React.FC<Props> = props => {
                 alt={srcImg}
                 width={840}
                 height={1620}
-                layout="reponsive"
                 className={'absolute top-0'}
               />
             </div>
