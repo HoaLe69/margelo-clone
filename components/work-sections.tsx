@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useContext, useRef } from 'react'
 import { createContext } from 'react'
 import { ScrollContext } from './scroll-observer'
+
 type IWorkContext = {
   progress: number
 }
