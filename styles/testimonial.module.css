@@ -1,0 +1,4 @@
+.embla__slide {
+  width: min(70%, 620px);
+  flex: 0 0 auto;
+}
