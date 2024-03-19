@@ -5,6 +5,7 @@ import Achievements from '@/components/achievements'
 import Works from '@/components/works'
 import TrustBy from '@/components/trustby'
 import ObserveViewportSize from '@/lib/observe-view-size'
+import Contactus from '@/components/contactus'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Achievements />
         <Works />
         <TrustBy />
+        <Contactus />
       </ScrollObserver>
     </ObserveViewportSize>
   )

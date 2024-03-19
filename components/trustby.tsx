@@ -10,7 +10,7 @@ const TrustBy = () => {
   return (
     <section
       style={{ alignItems: `${windowWidth >= 2230 ? 'center' : 'unset'}` }}
-      className="bg-white  min-h-screen flex flex-col  justify-between gap-16 md:gap32"
+      className="bg-white  min-h-screen flex flex-col  justify-center gap-16 md:gap-32"
     >
       <div className="flex-1"></div>
       <div>
@@ -25,7 +25,6 @@ const TrustBy = () => {
           process
         </h3>
       </div>
-      <div className="flex-1"></div>
       <TestimonialWrap>
         <Testimonials />
       </TestimonialWrap>
