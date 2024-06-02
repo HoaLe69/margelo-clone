@@ -1,4 +1,5 @@
 import Member from './member'
+
 const Aboutus = () => {
   // using process.cwd() to get current path
   // fs.readdir to get all file in directory
